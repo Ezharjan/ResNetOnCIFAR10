@@ -31,7 +31,7 @@ Number of network layers: 20
 Epoch: 10
 Data enhancement: yes
 
-![a6b235b0339b1711c8ab7a65262fdd19.png](evernotecid://91E79246-444E-496A-97EB-8998B983857A/appyinxiangcom/44555851/ENResource/p2)
+![image](https://github.com/Lipyu/ResNetOnCIFAR10/blob/main/Result/BatchSize.png)
 
 In the table we can see that the best evaluation accuracy increases as the batch size increases, however, after 512 there is a drop in accuracy, so we can assume that the best batch size in this experiment is 512。
 
@@ -48,7 +48,7 @@ Number of network layers: 20
 Epoch: 10
 Data enhancement: yes
 
-![b8e94479faade3e8f14858398d3b0acf.png](evernotecid://91E79246-444E-496A-97EB-8998B983857A/appyinxiangcom/44555851/ENResource/p3)
+![image](https://github.com/Lipyu/ResNetOnCIFAR10/blob/main/Result/Optimizer.png)
 
 From the results in the table it can be seen that the momentum, Adam, SGD and Adagrad achieve optimality with regularisation factors of, 1e-4,no optimisation strategy,1e-5,1e-4 respectively. The best results were obtained with a regularization factor of 1e-4 for the momentum optimizer, so the momentum optimizer was chosen for the next experiments with a regularization factor of 1e-4.
 
@@ -66,7 +66,7 @@ Number of network layers: 20
 Epoch: 10
 Data enhancement: yes
 
-![49d36dde627e79c5c0642a8ef9693cce.png](evernotecid://91E79246-444E-496A-97EB-8998B983857A/appyinxiangcom/44555851/ENResource/p7)
+![image](https://github.com/Lipyu/ResNetOnCIFAR10/blob/main/Result/MomentumCoefficient.png)
 
 From the experimental results in the table, we can see that the best experimental results can be obtained when the momentum coefficient is 0.9, so we choose 0.9 as the momentum coefficient for the subsequent experiments。
 
@@ -83,7 +83,9 @@ Regularization factor: 1e-4
 Number of network layers: 20
 Epoch: 10
 Data enhancement: yes
-![94e0c198d9465088913f3de04ab8f5a3.png](evernotecid://91E79246-444E-496A-97EB-8998B983857A/appyinxiangcom/44555851/ENResource/p8)
+
+![image](https://github.com/Lipyu/ResNetOnCIFAR10/blob/main/Result/LearningRate.png)
+
 As can be seen from the data in the table, the experiment achieved optimal results at a learning rate of 0.1/0.01/0.001, so the learning rate of 0.1/0.01/0.001 group was chosen as the learning rate for the subsequent experiment.
 
 ### Number of network layers
@@ -99,7 +101,9 @@ Regularization factor: 1e-4
 Learning rate: 0.1/0.01/0.001
 Epoch: 10
 Data enhancement: yes
-![eb4513e41583bf506afe6e2d019f068f.png](evernotecid://91E79246-444E-496A-97EB-8998B983857A/appyinxiangcom/44555851/ENResource/p9)
+
+![image](https://github.com/Lipyu/ResNetOnCIFAR10/blob/main/Result/networkLayers.png)
+
 From the experimental results in the table above, it can be seen that the highest accuracy rate in this experiment was achieved when using ResNet32, and therefore ResNet32 will be used as our network structure in subsequent experiments.
 
 ### Epoch
@@ -116,7 +120,7 @@ Learning rate: 0.1/0.01/0.001
 Number of network layers: 32
 Data enhancement: yes
 
-![0be901dbdfbca3a425ef55c80ad2923b.png](evernotecid://91E79246-444E-496A-97EB-8998B983857A/appyinxiangcom/44555851/ENResource/p10)
+![image](https://github.com/Lipyu/ResNetOnCIFAR10/blob/main/Result/Epoch.png)
 
 As can be seen from the results in the table, the accuracy of the experimental results increases as the Epoch continues to increase, but also tends to saturate after exceeding 100. Considering the training cost, 150 will be used as the training Epoch in subsequent experiments.
 
@@ -134,12 +138,14 @@ Number of network layers: 32
 Epoch: 150
 
 (Group No.1 used data enhancement while Group No.2 did not)
-![09d005667f9e4ceb4acaee083b29d4d2.png](evernotecid://91E79246-444E-496A-97EB-8998B983857A/appyinxiangcom/44555851/ENResource/p11)
+![image](https://github.com/Lipyu/ResNetOnCIFAR10/blob/main/Result/DataAugmentation.png)
 
 As you can see from the experimental data in the table, the difference in accuracy between using data augmentation and not using data augmentation is as much as 10 percent. The group without data augmentation showed more severe overfitting during the experiment, which was caused by the small size of our training data set. Therefore, we can conclude that data augmentation can reduce the overfitting phenomenon.
 
 * With data augmentation:
-![b261a2bd380f8a577a0297e636c1f532.png](evernotecid://91E79246-444E-496A-97EB-8998B983857A/appyinxiangcom/44555851/ENResource/p12)
+![image](hhttps://github.com/Lipyu/ResNetOnCIFAR10/blob/main/Result/1.png)
+
 
 * Without data augmentation:
-![2a2ca3df37b6f6ea4f620be1068d8a80.png](evernotecid://91E79246-444E-496A-97EB-8998B983857A/appyinxiangcom/44555851/ENResource/p13)
+![image](https://github.com/Lipyu/ResNetOnCIFAR10/blob/main/Result/2.png)
+
