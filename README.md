@@ -124,7 +124,7 @@ Data enhancement: yes
 
 As can be seen from the results in the table, the accuracy of the experimental results increases as the Epoch continues to increase, but also tends to saturate after exceeding 100. Considering the training cost, 150 will be used as the training Epoch in subsequent experiments.
 
-#### Data Augmentation
+### Data Augmentation
 In this experiment, we will investigate the effect of data augmentation on the results of the experiment, so two sets of experiments are set up to investigate using data augmentation and not using data augmentation.
 
 * * *
@@ -143,7 +143,7 @@ Epoch: 150
 As you can see from the experimental data in the table, the difference in accuracy between using data augmentation and not using data augmentation is as much as 10 percent. The group without data augmentation showed more severe overfitting during the experiment, which was caused by the small size of our training data set. Therefore, we can conclude that data augmentation can reduce the overfitting phenomenon.
 
 * With data augmentation:
-![image](hhttps://github.com/Lipyu/ResNetOnCIFAR10/blob/main/Result/1.png)
+![image](https://github.com/Lipyu/ResNetOnCIFAR10/blob/main/Result/1.png)
 
 
 * Without data augmentation:
