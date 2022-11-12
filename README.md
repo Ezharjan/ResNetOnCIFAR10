@@ -1,10 +1,12 @@
 # Classification:Training ResNet on CIFAR10
 This repository contains:
 
-* Dataset CIFAR10
 * Reference code
 * Trained models
 * Analysis of the tuning process
+
+The dataset can be downloaded here
+`!wget "http://ai-atest.bj.bcebos.com/cifar-10-python.tar.gz" -O cifar-10-python.tar.gz`
 
 ## Tuning process
 In the process, I will adjust the following hyperparameters：
