@@ -1,153 +1,186 @@
-# Classification:Training ResNet on CIFAR10
-This repository contains:
+# Classification: Training ResNet on CIFAR-10
 
-* Reference code
-* Trained models
-* Analysis of the tuning process
+This repository includes:
 
-The dataset can be downloaded here
-`!wget "http://ai-atest.bj.bcebos.com/cifar-10-python.tar.gz" -O cifar-10-python.tar.gz`
+- Reference code
+- Pre-trained models
+- Analysis of the hyperparameter tuning process
 
-## Tuning process
-In the process, I will adjust the following hyperparameters：
+The CIFAR-10 dataset can be downloaded using the following command:  
+```bash
+!wget "http://ai-atest.bj.bcebos.com/cifar-10-python.tar.gz" -O cifar-10-python.tar.gz
+```
 
-* Batch size
-* Optimizer
-* Regularization factor
-* Momentum coefficient when using Momentum Optimizer
-* Learning rate
-* Number of network layers
-* Epoch
-* Data Augmentation
+---
 
-### Batch size
-In this section, we will try out batch sizes of 32, 64, 128, 512 and 1024, and analyse the effect of different batch sizes on the training effect and choose the optimal batch size. 
+## Hyperparameter Tuning Process
 
-* * *
+This process involves adjusting the following hyperparameters to optimize model performance:
 
-The other hyperparameter arrangements for the following experiments are
-Optimizer: momentum optimizer, momentum coefficient: 0.9
-Regularization factor: 1e-4
-Learning rate: 0.1/0.01/0.001
-Number of network layers: 20
-Epoch: 10
-Data enhancement: yes
+- Batch size  
+- Optimizer  
+- Regularization factor  
+- Momentum coefficient (for the momentum optimizer)  
+- Learning rate  
+- Number of network layers  
+- Number of epochs  
+- Data augmentation techniques  
 
-![image](https://github.com/Lipyu/ResNetOnCIFAR10/blob/main/Result/BatchSize.png)
+### Batch Size
 
-In the table we can see that the best evaluation accuracy increases as the batch size increases, however, after 512 there is a drop in accuracy, so we can assume that the best batch size in this experiment is 512。
+The effect of different batch sizes (32, 64, 128, 512, and 1024) on training outcomes was analyzed to determine the optimal batch size.  
 
-### Optimizer and Regularization factor
-As different optimisers use different optimal regularisation strategies, the performance of each of the four optimisers Momentum, Adam, SGD and Adagrad with different regularisation factors will be explored in this experiment, and the optimal results will be selected for comparison to choose the most suitable optimiser with the matching regularisation factor.
+---
 
-* * *
+#### Experimental Setup:
+- Optimizer: Momentum optimizer (momentum coefficient: 0.9)  
+- Regularization factor: \(1 \times 10^{-4}\)  
+- Learning rate: 0.1/0.01/0.001  
+- Number of network layers: 20  
+- Epochs: 10  
+- Data augmentation: Enabled  
 
-The other hyperparameter arrangements for the following experiments are
-Batch size:512
-Momentum coefficient: 0.9(if Momentun is used)
-Learning rate: 0.1/0.01/0.001
-Number of network layers: 20
-Epoch: 10
-Data enhancement: yes
+![Batch Size Results](./result/BatchSize.png)
 
-![image](https://github.com/Lipyu/ResNetOnCIFAR10/blob/main/Result/Optimizer.png)
+The results indicate that evaluation accuracy improves with increasing batch size up to 512. Beyond this point, accuracy declines, suggesting that the optimal batch size for this experiment is 512.
 
-From the results in the table it can be seen that the momentum, Adam, SGD and Adagrad achieve optimality with regularisation factors of, 1e-4,no optimisation strategy,1e-5,1e-4 respectively. The best results were obtained with a regularization factor of 1e-4 for the momentum optimizer, so the momentum optimizer was chosen for the next experiments with a regularization factor of 1e-4.
+---
 
-### Momentum coefficient
-Next the effect of choosing different momentum coefficients(0.9, 0.5, 0.1) on the experimental results when using the momentum optimiser will be experimented with.
+### Optimizer and Regularization Factor
 
-* * *
+This experiment explores the performance of four optimizers—Momentum, Adam, SGD, and Adagrad—under different regularization factors. The goal is to identify the optimal optimizer-regularization factor combination.  
 
-The other hyperparameter arrangements for the following experiments are 
-Batch size:512
-Optimizer: momentum optimizer
-Regularization factor: 1e-4
-Learning rate: 0.1/0.01/0.001
-Number of network layers: 20
-Epoch: 10
-Data enhancement: yes
+---
 
-![image](https://github.com/Lipyu/ResNetOnCIFAR10/blob/main/Result/MomentumCoefficient.png)
+#### Experimental Setup:
+- Batch size: 512  
+- Momentum coefficient (if applicable): 0.9  
+- Learning rate: 0.1/0.01/0.001  
+- Number of network layers: 20  
+- Epochs: 10  
+- Data augmentation: Enabled  
 
-From the experimental results in the table, we can see that the best experimental results can be obtained when the momentum coefficient is 0.9, so we choose 0.9 as the momentum coefficient for the subsequent experiments。
+![Optimizer Results](./result/Optimizer.png)
 
-### Learning rate
-In this section, I will experiment with the effect of different learning rates on the results of the experiment. Since we are using segmented learning rates, four sets of learning rates are chosen: 0.05/0.005/0.0005,0.1/0.01/0.001, 0.2/0.02/0.002, 0.5/0.05/0.005
+From the table, the optimal regularization factors are as follows:
+- Momentum optimizer: \(1 \times 10^{-4}\)  
+- Adam optimizer: No regularization  
+- SGD optimizer: \(1 \times 10^{-5}\)  
+- Adagrad optimizer: \(1 \times 10^{-4}\)  
 
-* * *
+The momentum optimizer with a regularization factor of \(1 \times 10^{-4}\) achieved the best performance and was selected for subsequent experiments.
 
-The other hyperparameter arrangements for the following experiments are 
-Batch size:512
-Optimizer: momentum optimizer
-Momentum coefficient: 0.9
-Regularization factor: 1e-4
-Number of network layers: 20
-Epoch: 10
-Data enhancement: yes
+---
 
-![image](https://github.com/Lipyu/ResNetOnCIFAR10/blob/main/Result/LearningRate.png)
+### Momentum Coefficient
 
-As can be seen from the data in the table, the experiment achieved optimal results at a learning rate of 0.1/0.01/0.001, so the learning rate of 0.1/0.01/0.001 group was chosen as the learning rate for the subsequent experiment.
+The experiment evaluated the effect of different momentum coefficients (0.9, 0.5, and 0.1) on model performance using the momentum optimizer.  
 
-### Number of network layers
-In this experiment, we will explore the effect of different network layers of ResNet on the experimental results. Here we will experiment with ResNet20, ResNet32, ResNet44, ResNet56.
+---
 
-* * *
+#### Experimental Setup:
+- Batch size: 512  
+- Optimizer: Momentum optimizer  
+- Regularization factor: \(1 \times 10^{-4}\)  
+- Learning rate: 0.1/0.01/0.001  
+- Number of network layers: 20  
+- Epochs: 10  
+- Data augmentation: Enabled  
 
-The other hyperparameter arrangements for the following experiments are ：
-Batch size:512
-Optimizer: momentum optimizer
-Momentum coefficient: 0.9
-Regularization factor: 1e-4
-Learning rate: 0.1/0.01/0.001
-Epoch: 10
-Data enhancement: yes
+![Momentum Coefficient Results](./result/MomentumCoefficient.png)
 
-![image](https://github.com/Lipyu/ResNetOnCIFAR10/blob/main/Result/networkLayers.png)
+The results show that a momentum coefficient of 0.9 yields the best experimental outcomes, which is therefore used in subsequent experiments.
 
-From the experimental results in the table above, it can be seen that the highest accuracy rate in this experiment was achieved when using ResNet32, and therefore ResNet32 will be used as our network structure in subsequent experiments.
+---
 
-### Epoch
-Here we will experiment with the effect of different Epochs on the experimental results. The different Epochs used are 10, 50, 100, 150.
+### Learning Rate
 
-* * *
+This experiment investigates the impact of different learning rates on model performance. Four segmented learning rate schedules were tested:  
+1. 0.05/0.005/0.0005  
+2. 0.1/0.01/0.001  
+3. 0.2/0.02/0.002  
+4. 0.5/0.05/0.005  
 
-The other hyperparameter arrangements for the following experiments are ：
-Batch size:512
-Optimizer: momentum optimizer
-Momentum coefficient: 0.9
-Regularization factor: 1e-4
-Learning rate: 0.1/0.01/0.001
-Number of network layers: 32
-Data enhancement: yes
+---
 
-![image](https://github.com/Lipyu/ResNetOnCIFAR10/blob/main/Result/Epoch.png)
+#### Experimental Setup:
+- Batch size: 512  
+- Optimizer: Momentum optimizer  
+- Momentum coefficient: 0.9  
+- Regularization factor: \(1 \times 10^{-4}\)  
+- Number of network layers: 20  
+- Epochs: 10  
+- Data augmentation: Enabled  
 
-As can be seen from the results in the table, the accuracy of the experimental results increases as the Epoch continues to increase, but also tends to saturate after exceeding 100. Considering the training cost, 150 will be used as the training Epoch in subsequent experiments.
+![Learning Rate Results](./result/LearningRate.png)
+
+The optimal results were achieved with the 0.1/0.01/0.001 learning rate schedule, which was selected for subsequent experiments.
+
+---
+
+### Number of Network Layers
+
+The influence of the number of layers on ResNet's performance was evaluated by testing ResNet-20, ResNet-32, ResNet-44, and ResNet-56.  
+
+---
+
+#### Experimental Setup:
+- Batch size: 512  
+- Optimizer: Momentum optimizer  
+- Momentum coefficient: 0.9  
+- Regularization factor: \(1 \times 10^{-4}\)  
+- Learning rate: 0.1/0.01/0.001  
+- Epochs: 10  
+- Data augmentation: Enabled  
+
+![Network Layers Results](./result/networkLayers.png)
+
+ResNet-32 achieved the highest accuracy and was chosen as the network structure for subsequent experiments.
+
+---
+
+### Number of Epochs
+
+The effect of different training epochs (10, 50, 100, and 150) was analyzed.  
+
+---
+
+#### Experimental Setup:
+- Batch size: 512  
+- Optimizer: Momentum optimizer  
+- Momentum coefficient: 0.9  
+- Regularization factor: \(1 \times 10^{-4}\)  
+- Learning rate: 0.1/0.01/0.001  
+- Number of network layers: 32  
+- Data augmentation: Enabled  
+
+![Epoch Results](./result/Epoch.png)
+
+The results indicate that accuracy improves with the number of epochs but saturates after 100 epochs. Considering training costs, 150 epochs were selected for the final setup.
+
+---
 
 ### Data Augmentation
-In this experiment, we will investigate the effect of data augmentation on the results of the experiment, so two sets of experiments are set up to investigate using data augmentation and not using data augmentation.
 
-* * *
+The impact of data augmentation was assessed by comparing results from two experimental groups: one with data augmentation and one without.
 
-Batch size:512
-Optimizer: momentum optimizer
-Momentum coefficient: 0.9
-Regularization factor: 1e-4
-Learning rate: 0.1/0.01/0.001
-Number of network layers: 32
-Epoch: 150
+---
 
-(Group No.1 used data enhancement while Group No.2 did not)
-![image](https://github.com/Lipyu/ResNetOnCIFAR10/blob/main/Result/DataAugmentation.png)
+#### Experimental Setup:
+- Batch size: 512  
+- Optimizer: Momentum optimizer  
+- Momentum coefficient: 0.9  
+- Regularization factor: \(1 \times 10^{-4}\)  
+- Learning rate: 0.1/0.01/0.001  
+- Number of network layers: 32  
+- Epochs: 150  
 
-As you can see from the experimental data in the table, the difference in accuracy between using data augmentation and not using data augmentation is as much as 10 percent. The group without data augmentation showed more severe overfitting during the experiment, which was caused by the small size of our training data set. Therefore, we can conclude that data augmentation can reduce the overfitting phenomenon.
+![Data Augmentation Results](./result/DataAugmentation.png)
 
-* With data augmentation:
-![image](https://github.com/Lipyu/ResNetOnCIFAR10/blob/main/Result/1.png)
+Data augmentation improved accuracy by approximately 10%, reducing overfitting caused by the small training dataset size.
 
+- **With data augmentation:**  
+  ![With Augmentation](./result/1.png)
 
-* Without data augmentation:
-![image](https://github.com/Lipyu/ResNetOnCIFAR10/blob/main/Result/2.png)
-
+- **Without data augmentation:**  
+  ![Without Augmentation](./result/2.png)
