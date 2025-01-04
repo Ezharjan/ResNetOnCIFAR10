@@ -40,7 +40,7 @@ The effect of different batch sizes (32, 64, 128, 512, and 1024) on training out
 - Epochs: 10  
 - Data augmentation: Enabled  
 
-![Batch Size Results](./result/BatchSize.png)
+![Batch Size Results](./imgs/BatchSize.png)
 
 The results indicate that evaluation accuracy improves with increasing batch size up to 512. Beyond this point, accuracy declines, suggesting that the optimal batch size for this experiment is 512.
 
@@ -60,7 +60,7 @@ This experiment explores the performance of four optimizers—Momentum, Adam, SG
 - Epochs: 10  
 - Data augmentation: Enabled  
 
-![Optimizer Results](./result/Optimizer.png)
+![Optimizer Results](./imgs/Optimizer.png)
 
 From the table, the optimal regularization factors are as follows:
 - Momentum optimizer: \(1 \times 10^{-4}\)  
@@ -87,7 +87,7 @@ The experiment evaluated the effect of different momentum coefficients (0.9, 0.5
 - Epochs: 10  
 - Data augmentation: Enabled  
 
-![Momentum Coefficient Results](./result/MomentumCoefficient.png)
+![Momentum Coefficient Results](./imgs/MomentumCoefficient.png)
 
 The results show that a momentum coefficient of 0.9 yields the best experimental outcomes, which is therefore used in subsequent experiments.
 
@@ -112,7 +112,7 @@ This experiment investigates the impact of different learning rates on model per
 - Epochs: 10  
 - Data augmentation: Enabled  
 
-![Learning Rate Results](./result/LearningRate.png)
+![Learning Rate Results](./imgs/LearningRate.png)
 
 The optimal results were achieved with the 0.1/0.01/0.001 learning rate schedule, which was selected for subsequent experiments.
 
@@ -133,7 +133,7 @@ The influence of the number of layers on ResNet's performance was evaluated by t
 - Epochs: 10  
 - Data augmentation: Enabled  
 
-![Network Layers Results](./result/networkLayers.png)
+![Network Layers Results](./imgs/networkLayers.png)
 
 ResNet-32 achieved the highest accuracy and was chosen as the network structure for subsequent experiments.
 
@@ -154,7 +154,7 @@ The effect of different training epochs (10, 50, 100, and 150) was analyzed.
 - Number of network layers: 32  
 - Data augmentation: Enabled  
 
-![Epoch Results](./result/Epoch.png)
+![Epoch Results](./imgs/Epoch.png)
 
 The results indicate that accuracy improves with the number of epochs but saturates after 100 epochs. Considering training costs, 150 epochs were selected for the final setup.
 
@@ -175,12 +175,12 @@ The impact of data augmentation was assessed by comparing results from two exper
 - Number of network layers: 32  
 - Epochs: 150  
 
-![Data Augmentation Results](./result/DataAugmentation.png)
+![Data Augmentation Results](./imgs/DataAugmentation.png)
 
 Data augmentation improved accuracy by approximately 10%, reducing overfitting caused by the small training dataset size.
 
 - **With data augmentation:**  
-  ![With Augmentation](./result/1.png)
+  ![With Augmentation](./imgs/1.png)
 
 - **Without data augmentation:**  
-  ![Without Augmentation](./result/2.png)
+  ![Without Augmentation](./imgs/2.png)
