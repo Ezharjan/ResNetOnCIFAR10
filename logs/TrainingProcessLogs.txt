@@ -1,0 +1,759 @@
+E:\ResNetOnCIFAR10>python main.py
+Using CPU for training.
+Downloading and loading training and testing data...
+Cache file C:\Users\user\.cache\paddle\dataset\cifar\cifar-10-python.tar.gz not found, downloading https://dataset.bj.bcebos.com/cifar/cifar-10-python.tar.gz
+Begin to download
+item 41626/41626 [============================>.] - ETA: 0s - 3ms/item
+Download finished
+Data loading complete. Training samples: 50000, Test samples: 10000.
+The loss value printed in the log is the current step, and the metric is the average value of previous steps.
+Epoch 1/150
+step 391/391 [==============================] - loss: 1.5834 - acc: 0.3502 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 1.4209 - acc: 0.4055 - 335ms/step
+Eval samples: 10000
+Epoch 2/150
+step 391/391 [==============================] - loss: 1.5905 - acc: 0.3933 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 1.3974 - acc: 0.4139 - 338ms/step
+Eval samples: 10000
+Epoch 3/150
+step 391/391 [==============================] - loss: 1.6536 - acc: 0.4034 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 1.3441 - acc: 0.4235 - 338ms/step
+Eval samples: 10000
+Epoch 4/150
+step 391/391 [==============================] - loss: 1.6059 - acc: 0.4085 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 1.3514 - acc: 0.4337 - 340ms/step
+Eval samples: 10000
+Epoch 5/150
+step 391/391 [==============================] - loss: 1.6070 - acc: 0.4199 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 1.3368 - acc: 0.4421 - 338ms/step
+Eval samples: 10000
+Epoch 6/150
+step 391/391 [==============================] - loss: 1.3805 - acc: 0.4274 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 1.3138 - acc: 0.4475 - 338ms/step
+Eval samples: 10000
+Epoch 7/150
+step 391/391 [==============================] - loss: 1.2893 - acc: 0.4359 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 1.3113 - acc: 0.4574 - 335ms/step
+Eval samples: 10000
+Epoch 8/150
+step 391/391 [==============================] - loss: 1.7040 - acc: 0.4410 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 1.3333 - acc: 0.4668 - 336ms/step
+Eval samples: 10000
+Epoch 9/150
+step 391/391 [==============================] - loss: 1.6298 - acc: 0.4509 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 1.2876 - acc: 0.4723 - 335ms/step
+Eval samples: 10000
+Epoch 10/150
+step 391/391 [==============================] - loss: 1.5943 - acc: 0.4596 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 1.2898 - acc: 0.4838 - 336ms/step
+Eval samples: 10000
+Epoch 11/150
+step 391/391 [==============================] - loss: 1.5136 - acc: 0.4624 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 1.3088 - acc: 0.4903 - 335ms/step
+Eval samples: 10000
+Epoch 12/150
+step 391/391 [==============================] - loss: 1.4955 - acc: 0.4715 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 1.3788 - acc: 0.4990 - 335ms/step
+Eval samples: 10000
+Epoch 13/150
+step 391/391 [==============================] - loss: 1.5680 - acc: 0.4803 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 1.3110 - acc: 0.5069 - 336ms/step
+Eval samples: 10000
+Epoch 14/150
+step 391/391 [==============================] - loss: 1.3560 - acc: 0.4887 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 1.3111 - acc: 0.5138 - 335ms/step
+Eval samples: 10000
+Epoch 15/150
+step 391/391 [==============================] - loss: 1.2313 - acc: 0.4956 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 1.2156 - acc: 0.5248 - 335ms/step
+Eval samples: 10000
+Epoch 16/150
+step 391/391 [==============================] - loss: 1.4441 - acc: 0.5042 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 1.1750 - acc: 0.5253 - 344ms/step
+Eval samples: 10000
+Epoch 17/150
+step 391/391 [==============================] - loss: 1.4212 - acc: 0.5132 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 1.1869 - acc: 0.5370 - 335ms/step
+Eval samples: 10000
+Epoch 18/150
+step 391/391 [==============================] - loss: 1.2707 - acc: 0.5225 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 1.1777 - acc: 0.5414 - 336ms/step
+Eval samples: 10000
+Epoch 19/150
+step 391/391 [==============================] - loss: 1.2109 - acc: 0.5293 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 1.2755 - acc: 0.5472 - 338ms/step
+Eval samples: 10000
+Epoch 20/150
+step 391/391 [==============================] - loss: 0.9578 - acc: 0.5361 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 1.2214 - acc: 0.5536 - 336ms/step
+Eval samples: 10000
+Epoch 21/150
+step 391/391 [==============================] - loss: 1.1404 - acc: 0.5447 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 1.2058 - acc: 0.5630 - 340ms/step
+Eval samples: 10000
+Epoch 22/150
+step 391/391 [==============================] - loss: 1.2504 - acc: 0.5519 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 1.2689 - acc: 0.5663 - 335ms/step
+Eval samples: 10000
+Epoch 23/150
+step 391/391 [==============================] - loss: 1.3053 - acc: 0.5594 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 1.2114 - acc: 0.5708 - 337ms/step
+Eval samples: 10000
+Epoch 24/150
+step 391/391 [==============================] - loss: 1.0315 - acc: 0.5687 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 1.1428 - acc: 0.5671 - 337ms/step
+Eval samples: 10000
+Epoch 25/150
+step 391/391 [==============================] - loss: 1.4156 - acc: 0.5750 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 1.1436 - acc: 0.5870 - 336ms/step
+Eval samples: 10000
+Epoch 26/150
+step 391/391 [==============================] - loss: 1.3571 - acc: 0.5818 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 1.1953 - acc: 0.5924 - 336ms/step
+Eval samples: 10000
+Epoch 27/150
+step 391/391 [==============================] - loss: 1.3061 - acc: 0.5892 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 1.1785 - acc: 0.6057 - 336ms/step
+Eval samples: 10000
+Epoch 28/150
+step 391/391 [==============================] - loss: 1.1067 - acc: 0.5973 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 1.0971 - acc: 0.6078 - 336ms/step
+Eval samples: 10000
+Epoch 29/150
+step 391/391 [==============================] - loss: 1.1626 - acc: 0.6053 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 1.1247 - acc: 0.6203 - 336ms/step
+Eval samples: 10000
+Epoch 30/150
+step 391/391 [==============================] - loss: 1.2813 - acc: 0.6106 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 1.1560 - acc: 0.6130 - 339ms/step
+Eval samples: 10000
+Epoch 31/150
+step 391/391 [==============================] - loss: 1.0911 - acc: 0.6181 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 1.0550 - acc: 0.6253 - 336ms/step
+Eval samples: 10000
+Epoch 32/150
+step 391/391 [==============================] - loss: 1.1205 - acc: 0.6232 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.9911 - acc: 0.6204 - 336ms/step
+Eval samples: 10000
+Epoch 33/150
+step 391/391 [==============================] - loss: 1.0811 - acc: 0.6302 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.9868 - acc: 0.6334 - 336ms/step
+Eval samples: 10000
+Epoch 34/150
+step 391/391 [==============================] - loss: 0.9680 - acc: 0.6398 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 1.1230 - acc: 0.6363 - 339ms/step
+Eval samples: 10000
+Epoch 35/150
+step 391/391 [==============================] - loss: 1.1106 - acc: 0.6440 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.9712 - acc: 0.6412 - 340ms/step
+Eval samples: 10000
+Epoch 36/150
+step 391/391 [==============================] - loss: 0.9513 - acc: 0.6483 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 1.0265 - acc: 0.6518 - 336ms/step
+Eval samples: 10000
+Epoch 37/150
+step 391/391 [==============================] - loss: 1.0393 - acc: 0.6512 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 1.0976 - acc: 0.6450 - 336ms/step
+Eval samples: 10000
+Epoch 38/150
+step 391/391 [==============================] - loss: 1.1038 - acc: 0.6620 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.8920 - acc: 0.6607 - 336ms/step
+Eval samples: 10000
+Epoch 39/150
+step 391/391 [==============================] - loss: 0.9857 - acc: 0.6653 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.8985 - acc: 0.6756 - 336ms/step
+Eval samples: 10000
+Epoch 40/150
+step 391/391 [==============================] - loss: 1.1228 - acc: 0.6725 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.9122 - acc: 0.6683 - 338ms/step
+Eval samples: 10000
+Epoch 41/150
+step 391/391 [==============================] - loss: 0.8338 - acc: 0.6766 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.7837 - acc: 0.6735 - 339ms/step
+Eval samples: 10000
+Epoch 42/150
+step 391/391 [==============================] - loss: 0.8756 - acc: 0.6809 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.8393 - acc: 0.6811 - 336ms/step
+Eval samples: 10000
+Epoch 43/150
+step 391/391 [==============================] - loss: 0.6099 - acc: 0.6853 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.9872 - acc: 0.6824 - 335ms/step
+Eval samples: 10000
+Epoch 44/150
+step 391/391 [==============================] - loss: 0.7824 - acc: 0.6924 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.8000 - acc: 0.6875 - 336ms/step
+Eval samples: 10000
+Epoch 45/150
+step 391/391 [==============================] - loss: 0.8060 - acc: 0.6945 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.7170 - acc: 0.6793 - 337ms/step
+Eval samples: 10000
+Epoch 46/150
+step 391/391 [==============================] - loss: 1.0455 - acc: 0.7017 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.6266 - acc: 0.6963 - 336ms/step
+Eval samples: 10000
+Epoch 47/150
+step 391/391 [==============================] - loss: 1.0086 - acc: 0.7038 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.7591 - acc: 0.6989 - 335ms/step
+Eval samples: 10000
+Epoch 48/150
+step 391/391 [==============================] - loss: 0.6275 - acc: 0.7098 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.5646 - acc: 0.7029 - 337ms/step
+Eval samples: 10000
+Epoch 49/150
+step 391/391 [==============================] - loss: 0.7533 - acc: 0.7128 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.5722 - acc: 0.7069 - 337ms/step
+Eval samples: 10000
+Epoch 50/150
+step 391/391 [==============================] - loss: 0.6370 - acc: 0.7190 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.7966 - acc: 0.7085 - 336ms/step
+Eval samples: 10000
+Epoch 51/150
+step 391/391 [==============================] - loss: 0.7504 - acc: 0.7224 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.6356 - acc: 0.7085 - 337ms/step
+Eval samples: 10000
+Epoch 52/150
+step 391/391 [==============================] - loss: 0.8956 - acc: 0.7256 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.6889 - acc: 0.7162 - 337ms/step
+Eval samples: 10000
+Epoch 53/150
+step 391/391 [==============================] - loss: 0.7263 - acc: 0.7265 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.7044 - acc: 0.7242 - 337ms/step
+Eval samples: 10000
+Epoch 54/150
+step 391/391 [==============================] - loss: 0.8524 - acc: 0.7318 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.6856 - acc: 0.7124 - 336ms/step
+Eval samples: 10000
+Epoch 55/150
+step 391/391 [==============================] - loss: 0.8486 - acc: 0.7379 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.5652 - acc: 0.7277 - 336ms/step
+Eval samples: 10000
+Epoch 56/150
+step 391/391 [==============================] - loss: 0.7999 - acc: 0.7382 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.6538 - acc: 0.7096 - 335ms/step
+Eval samples: 10000
+Epoch 57/150
+step 391/391 [==============================] - loss: 0.6746 - acc: 0.7419 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.5473 - acc: 0.7241 - 335ms/step
+Eval samples: 10000
+Epoch 58/150
+step 391/391 [==============================] - loss: 0.9373 - acc: 0.7448 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.4150 - acc: 0.7349 - 336ms/step
+Eval samples: 10000
+Epoch 59/150
+step 391/391 [==============================] - loss: 0.7947 - acc: 0.7514 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.5141 - acc: 0.7384 - 336ms/step
+Eval samples: 10000
+Epoch 60/150
+step 391/391 [==============================] - loss: 0.4983 - acc: 0.7540 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.6846 - acc: 0.7251 - 336ms/step
+Eval samples: 10000
+Epoch 61/150
+step 391/391 [==============================] - loss: 0.7440 - acc: 0.7550 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.5688 - acc: 0.7103 - 336ms/step
+Eval samples: 10000
+Epoch 62/150
+step 391/391 [==============================] - loss: 0.4871 - acc: 0.7582 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.4843 - acc: 0.7428 - 336ms/step
+Eval samples: 10000
+Epoch 63/150
+step 391/391 [==============================] - loss: 0.6619 - acc: 0.7610 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.4986 - acc: 0.7470 - 336ms/step
+Eval samples: 10000
+Epoch 64/150
+step 391/391 [==============================] - loss: 0.7285 - acc: 0.7617 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.4087 - acc: 0.7359 - 338ms/step
+Eval samples: 10000
+Epoch 65/150
+step 391/391 [==============================] - loss: 0.5528 - acc: 0.7682 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.5506 - acc: 0.7456 - 336ms/step
+Eval samples: 10000
+Epoch 66/150
+step 391/391 [==============================] - loss: 0.7582 - acc: 0.7687 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.4970 - acc: 0.7451 - 336ms/step
+Eval samples: 10000
+Epoch 67/150
+step 391/391 [==============================] - loss: 0.6298 - acc: 0.7713 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.4420 - acc: 0.7555 - 336ms/step
+Eval samples: 10000
+Epoch 68/150
+step 391/391 [==============================] - loss: 0.5345 - acc: 0.7740 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.5220 - acc: 0.7502 - 336ms/step
+Eval samples: 10000
+Epoch 69/150
+step 391/391 [==============================] - loss: 0.6156 - acc: 0.7763 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.5080 - acc: 0.7487 - 338ms/step
+Eval samples: 10000
+Epoch 70/150
+step 391/391 [==============================] - loss: 0.6615 - acc: 0.7791 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.4374 - acc: 0.7631 - 341ms/step
+Eval samples: 10000
+Epoch 71/150
+step 391/391 [==============================] - loss: 0.6613 - acc: 0.7808 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.4328 - acc: 0.7652 - 338ms/step
+Eval samples: 10000
+Epoch 72/150
+step 391/391 [==============================] - loss: 0.6441 - acc: 0.7816 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.4073 - acc: 0.7641 - 336ms/step
+Eval samples: 10000
+Epoch 73/150
+step 391/391 [==============================] - loss: 0.6558 - acc: 0.7849 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.4572 - acc: 0.7587 - 338ms/step
+Eval samples: 10000
+Epoch 74/150
+step 391/391 [==============================] - loss: 0.7255 - acc: 0.7868 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.4174 - acc: 0.7695 - 336ms/step
+Eval samples: 10000
+Epoch 75/150
+step 391/391 [==============================] - loss: 0.5529 - acc: 0.7911 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.4716 - acc: 0.7617 - 336ms/step
+Eval samples: 10000
+Epoch 76/150
+step 391/391 [==============================] - loss: 0.7153 - acc: 0.7910 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.4139 - acc: 0.7660 - 336ms/step
+Eval samples: 10000
+Epoch 77/150
+step 391/391 [==============================] - loss: 0.5089 - acc: 0.7946 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.3978 - acc: 0.7701 - 336ms/step
+Eval samples: 10000
+Epoch 78/150
+step 391/391 [==============================] - loss: 0.7755 - acc: 0.7934 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.3578 - acc: 0.7753 - 336ms/step
+Eval samples: 10000
+Epoch 79/150
+step 391/391 [==============================] - loss: 0.8094 - acc: 0.7949 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.3989 - acc: 0.7640 - 336ms/step
+Eval samples: 10000
+Epoch 80/150
+step 391/391 [==============================] - loss: 0.7077 - acc: 0.7979 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.3659 - acc: 0.7778 - 335ms/step
+Eval samples: 10000
+Epoch 81/150
+step 391/391 [==============================] - loss: 0.4939 - acc: 0.8013 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.3896 - acc: 0.7652 - 337ms/step
+Eval samples: 10000
+Epoch 82/150
+step 391/391 [==============================] - loss: 0.4310 - acc: 0.8048 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.4186 - acc: 0.7740 - 335ms/step
+Eval samples: 10000
+Epoch 83/150
+step 391/391 [==============================] - loss: 0.4396 - acc: 0.8036 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.4422 - acc: 0.7766 - 338ms/step
+Eval samples: 10000
+Epoch 84/150
+step 391/391 [==============================] - loss: 0.5915 - acc: 0.8048 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.3948 - acc: 0.7674 - 336ms/step
+Eval samples: 10000
+Epoch 85/150
+step 391/391 [==============================] - loss: 0.4745 - acc: 0.8074 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.3885 - acc: 0.7745 - 335ms/step
+Eval samples: 10000
+Epoch 86/150
+step 391/391 [==============================] - loss: 0.6643 - acc: 0.8112 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.4116 - acc: 0.7814 - 339ms/step
+Eval samples: 10000
+Epoch 87/150
+step 391/391 [==============================] - loss: 0.6407 - acc: 0.8114 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.4087 - acc: 0.7814 - 335ms/step
+Eval samples: 10000
+Epoch 88/150
+step 391/391 [==============================] - loss: 0.5481 - acc: 0.8129 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.3949 - acc: 0.7776 - 336ms/step
+Eval samples: 10000
+Epoch 89/150
+step 391/391 [==============================] - loss: 0.5012 - acc: 0.8151 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.5297 - acc: 0.7824 - 341ms/step
+Eval samples: 10000
+Epoch 90/150
+step 391/391 [==============================] - loss: 0.5528 - acc: 0.8168 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.2654 - acc: 0.7782 - 338ms/step
+Eval samples: 10000
+Epoch 91/150
+step 391/391 [==============================] - loss: 0.6093 - acc: 0.8172 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.2852 - acc: 0.7871 - 341ms/step
+Eval samples: 10000
+Epoch 92/150
+step 391/391 [==============================] - loss: 0.4708 - acc: 0.8178 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.3430 - acc: 0.7882 - 338ms/step
+Eval samples: 10000
+Epoch 93/150
+step 391/391 [==============================] - loss: 0.5286 - acc: 0.8207 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.4259 - acc: 0.7887 - 335ms/step
+Eval samples: 10000
+Epoch 94/150
+step 391/391 [==============================] - loss: 0.6438 - acc: 0.8227 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.3373 - acc: 0.7962 - 336ms/step
+Eval samples: 10000
+Epoch 95/150
+step 391/391 [==============================] - loss: 0.3662 - acc: 0.8251 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.4115 - acc: 0.7891 - 338ms/step
+Eval samples: 10000
+Epoch 96/150
+step 391/391 [==============================] - loss: 0.5730 - acc: 0.8262 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.4194 - acc: 0.7904 - 334ms/step
+Eval samples: 10000
+Epoch 97/150
+step 391/391 [==============================] - loss: 0.3412 - acc: 0.8269 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.3715 - acc: 0.7986 - 341ms/step
+Eval samples: 10000
+Epoch 98/150
+step 391/391 [==============================] - loss: 0.7524 - acc: 0.8303 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.3082 - acc: 0.7971 - 337ms/step
+Eval samples: 10000
+Epoch 99/150
+step 391/391 [==============================] - loss: 0.5867 - acc: 0.8292 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.3743 - acc: 0.7940 - 337ms/step
+Eval samples: 10000
+Epoch 100/150
+step 391/391 [==============================] - loss: 0.6593 - acc: 0.8267 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.4442 - acc: 0.7662 - 334ms/step
+Eval samples: 10000
+Epoch 101/150
+step 391/391 [==============================] - loss: 0.4156 - acc: 0.8325 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.3240 - acc: 0.7915 - 352ms/step
+Eval samples: 10000
+Epoch 102/150
+step 391/391 [==============================] - loss: 0.5427 - acc: 0.8334 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.2722 - acc: 0.7961 - 335ms/step
+Eval samples: 10000
+Epoch 103/150
+step 391/391 [==============================] - loss: 0.5358 - acc: 0.8348 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.3483 - acc: 0.7938 - 337ms/step
+Eval samples: 10000
+Epoch 104/150
+step 391/391 [==============================] - loss: 0.5124 - acc: 0.8358 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.3067 - acc: 0.7912 - 335ms/step
+Eval samples: 10000
+Epoch 105/150
+step 391/391 [==============================] - loss: 0.4314 - acc: 0.8353 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.3054 - acc: 0.7995 - 340ms/step
+Eval samples: 10000
+Epoch 106/150
+step 391/391 [==============================] - loss: 0.3946 - acc: 0.8368 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.3715 - acc: 0.7979 - 335ms/step
+Eval samples: 10000
+Epoch 107/150
+step 391/391 [==============================] - loss: 0.4159 - acc: 0.8391 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.3602 - acc: 0.8014 - 338ms/step
+Eval samples: 10000
+Epoch 108/150
+step 391/391 [==============================] - loss: 0.4444 - acc: 0.8386 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.5187 - acc: 0.7873 - 335ms/step
+Eval samples: 10000
+Epoch 109/150
+step 391/391 [==============================] - loss: 0.5500 - acc: 0.8414 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.2973 - acc: 0.8047 - 336ms/step
+Eval samples: 10000
+Epoch 110/150
+step 391/391 [==============================] - loss: 0.4752 - acc: 0.8428 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.3014 - acc: 0.8068 - 336ms/step
+Eval samples: 10000
+Epoch 111/150
+step 391/391 [==============================] - loss: 0.4981 - acc: 0.8446 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.3035 - acc: 0.8018 - 335ms/step
+Eval samples: 10000
+Epoch 112/150
+step 391/391 [==============================] - loss: 0.2368 - acc: 0.8453 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.3639 - acc: 0.8123 - 335ms/step
+Eval samples: 10000
+Epoch 113/150
+step 391/391 [==============================] - loss: 0.4098 - acc: 0.8480 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.3062 - acc: 0.8132 - 335ms/step
+Eval samples: 10000
+Epoch 114/150
+step 391/391 [==============================] - loss: 0.5747 - acc: 0.8480 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.3192 - acc: 0.8018 - 335ms/step
+Eval samples: 10000
+Epoch 115/150
+step 391/391 [==============================] - loss: 0.3946 - acc: 0.8490 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.3176 - acc: 0.8138 - 334ms/step
+Eval samples: 10000
+Epoch 116/150
+step 391/391 [==============================] - loss: 0.4545 - acc: 0.8538 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.2856 - acc: 0.8091 - 335ms/step
+Eval samples: 10000
+Epoch 117/150
+step 391/391 [==============================] - loss: 0.2973 - acc: 0.8488 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.2488 - acc: 0.8110 - 341ms/step
+Eval samples: 10000
+Epoch 118/150
+step 391/391 [==============================] - loss: 0.2399 - acc: 0.8502 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.3385 - acc: 0.8082 - 335ms/step
+Eval samples: 10000
+Epoch 119/150
+step 391/391 [==============================] - loss: 0.5831 - acc: 0.8544 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.2720 - acc: 0.8056 - 335ms/step
+Eval samples: 10000
+Epoch 120/150
+step 391/391 [==============================] - loss: 0.3685 - acc: 0.8517 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.4696 - acc: 0.8108 - 336ms/step
+Eval samples: 10000
+Epoch 121/150
+step 391/391 [==============================] - loss: 0.4396 - acc: 0.8578 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.3744 - acc: 0.8092 - 334ms/step
+Eval samples: 10000
+Epoch 122/150
+step 391/391 [==============================] - loss: 0.4054 - acc: 0.8574 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.3468 - acc: 0.8166 - 335ms/step
+Eval samples: 10000
+Epoch 123/150
+step 391/391 [==============================] - loss: 0.3960 - acc: 0.8567 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.3700 - acc: 0.8092 - 335ms/step
+Eval samples: 10000
+Epoch 124/150
+step 391/391 [==============================] - loss: 0.3452 - acc: 0.8593 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.2811 - acc: 0.8081 - 335ms/step
+Eval samples: 10000
+Epoch 125/150
+step 391/391 [==============================] - loss: 0.3802 - acc: 0.8608 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.3694 - acc: 0.8128 - 335ms/step
+Eval samples: 10000
+Epoch 126/150
+step 391/391 [==============================] - loss: 0.3863 - acc: 0.8617 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.3232 - acc: 0.8060 - 335ms/step
+Eval samples: 10000
+Epoch 127/150
+step 391/391 [==============================] - loss: 0.3191 - acc: 0.8617 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.3282 - acc: 0.8173 - 335ms/step
+Eval samples: 10000
+Epoch 128/150
+step 391/391 [==============================] - loss: 0.4051 - acc: 0.8620 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.2951 - acc: 0.8160 - 336ms/step
+Eval samples: 10000
+Epoch 129/150
+step 391/391 [==============================] - loss: 0.2880 - acc: 0.8637 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.2725 - acc: 0.8188 - 334ms/step
+Eval samples: 10000
+Epoch 130/150
+step 391/391 [==============================] - loss: 0.4108 - acc: 0.8654 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.3726 - acc: 0.8078 - 335ms/step
+Eval samples: 10000
+Epoch 131/150
+step 391/391 [==============================] - loss: 0.4003 - acc: 0.8652 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.3656 - acc: 0.8052 - 335ms/step
+Eval samples: 10000
+Epoch 132/150
+step 391/391 [==============================] - loss: 0.2644 - acc: 0.8672 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.3911 - acc: 0.7928 - 335ms/step
+Eval samples: 10000
+Epoch 133/150
+step 391/391 [==============================] - loss: 0.5687 - acc: 0.8651 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.2186 - acc: 0.8194 - 335ms/step
+Eval samples: 10000
+Epoch 134/150
+step 391/391 [==============================] - loss: 0.4290 - acc: 0.8674 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.3729 - acc: 0.8138 - 335ms/step
+Eval samples: 10000
+Epoch 135/150
+step 391/391 [==============================] - loss: 0.5068 - acc: 0.8678 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.4292 - acc: 0.8132 - 335ms/step
+Eval samples: 10000
+Epoch 136/150
+step 391/391 [==============================] - loss: 0.3924 - acc: 0.8708 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.2708 - acc: 0.8162 - 335ms/step
+Eval samples: 10000
+Epoch 137/150
+step 391/391 [==============================] - loss: 0.4648 - acc: 0.8711 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.3204 - acc: 0.8116 - 335ms/step
+Eval samples: 10000
+Epoch 138/150
+step 391/391 [==============================] - loss: 0.2610 - acc: 0.8718 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.3480 - acc: 0.8177 - 336ms/step
+Eval samples: 10000
+Epoch 139/150
+step 391/391 [==============================] - loss: 0.3031 - acc: 0.8727 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.3534 - acc: 0.8200 - 338ms/step
+Eval samples: 10000
+Epoch 140/150
+step 391/391 [==============================] - loss: 0.3407 - acc: 0.8730 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.3198 - acc: 0.8139 - 335ms/step
+Eval samples: 10000
+Epoch 141/150
+step 391/391 [==============================] - loss: 0.3258 - acc: 0.8735 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.3081 - acc: 0.8124 - 335ms/step
+Eval samples: 10000
+Epoch 142/150
+step 391/391 [==============================] - loss: 0.5206 - acc: 0.8744 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.3848 - acc: 0.7890 - 335ms/step
+Eval samples: 10000
+Epoch 143/150
+step 391/391 [==============================] - loss: 0.3388 - acc: 0.8743 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.3065 - acc: 0.8109 - 335ms/step
+Eval samples: 10000
+Epoch 144/150
+step 391/391 [==============================] - loss: 0.3913 - acc: 0.8773 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.4245 - acc: 0.8154 - 338ms/step
+Eval samples: 10000
+Epoch 145/150
+step 391/391 [==============================] - loss: 0.3675 - acc: 0.8788 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.3229 - acc: 0.8156 - 337ms/step
+Eval samples: 10000
+Epoch 146/150
+step 391/391 [==============================] - loss: 0.3333 - acc: 0.8784 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.4186 - acc: 0.8236 - 334ms/step
+Eval samples: 10000
+Epoch 147/150
+step 391/391 [==============================] - loss: 0.3930 - acc: 0.8797 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.2681 - acc: 0.8249 - 337ms/step
+Eval samples: 10000
+Epoch 148/150
+step 391/391 [==============================] - loss: 0.1837 - acc: 0.8786 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.3777 - acc: 0.8214 - 338ms/step
+Eval samples: 10000
+Epoch 149/150
+step 391/391 [==============================] - loss: 0.3282 - acc: 0.8815 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.4588 - acc: 0.8251 - 338ms/step
+Eval samples: 10000
+Epoch 150/150
+step 391/391 [==============================] - loss: 0.2395 - acc: 0.8797 - 1s/step
+Eval begin...
+step 79/79 [==============================] - loss: 0.4149 - acc: 0.8273 - 334ms/step
+Eval samples: 10000
